@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Carrinho
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-icon aria-hidden="true" name="call" slot="start"></ion-icon>
+    <ion-label>Caso deseje comprar em atacado, entre em contato com XX XXXXX-XXXX</ion-label>
+  </ion-item>
+  <ion-content color="light">
+    <ion-list [inset]="true">
+      <ion-item>
+        <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
+        <ion-input aria-label="Task name" value="Camisa Preta"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
+        <ion-input aria-label="Task name" value="Camisa Branca"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox slot="start" aria-label="Toggle task completion"></ion-checkbox>
+        <ion-input aria-label="Task name" value="Camisas Coloridas"></ion-input>
+      </ion-item>
+        
+        <ion-button color="dark" id="click-trigger">Comprar</ion-button>
+<ion-popover trigger="click-trigger" triggerAction="click">
+  <ng-template>
+    <ion-content class="ion-padding">Compra bem sucedida!</ion-content>
+  </ng-template>
+</ion-popover>
+
+    </ion-list>
+</ion-content>
